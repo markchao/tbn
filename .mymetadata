@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="tbn"
+  id="myeclipse.1364451105890"
+  context-root="/tbn"
+  j2ee-spec="5.0"
+  archive="tbn.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
