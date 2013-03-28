@@ -28,9 +28,9 @@
         </action>
      -->
     </package>
-<!-- 
-    <include file="example.xml"/>
- -->
+
+    <include file="config/struts/struts_login.xml"/>
+
     <!-- Add packages here -->
 
 </struts>
