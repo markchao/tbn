@@ -54,11 +54,12 @@
     	</tx:attributes>
     </tx:advice>
     <!-- 组装事物 -->
+     
     <aop:config>
        <aop:pointcut expression="execution(* com.tbn.login.service.*.*(..))" id="allLoginServiceMethod"/>
        <aop:advisor pointcut-ref="allLoginServiceMethod" advice-ref="LogionAdvice"/>
     </aop:config>
-  
+   
 	<bean id="daoParent" abstract="true" lazy-init="true">
 	   <property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>

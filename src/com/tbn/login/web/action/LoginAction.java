@@ -6,9 +6,7 @@ import com.tbn.login.service.LoginService;
 public class LoginAction extends BaseAction{
 
 	private LoginService loginService;
-	public void setLoginService(LoginService loginService) {
-		this.loginService = loginService;
-	}
+	
 
 	@Override
 	public String doAdd() throws Exception {
@@ -31,9 +29,17 @@ public class LoginAction extends BaseAction{
 	@Override
 	public String query() throws Exception {
 		// TODO Auto-generated method stub
-		System.out.println(loginService.getUserAll().size());
-		System.out.println("query");
-		return "query";
+		boolean flog=false;
+		String name=this.getRequest().getParameter("userName");
+		String passward=this.getRequest().getParameter("userPass");
+		
+//		if(!PubMethod.isEmpty(name) && !PubMethod.isEmpty(passward))
+//			flog=loginService.verifUser(name,passward);
+		
+		if(flog)
+			return "query";
+		else
+			return "login";
 	}
 
 	@Override

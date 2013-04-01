@@ -8,6 +8,7 @@
     <package name="index" namespace="/" extends="default">
 
         <action name="loginAction" class="loginAction">
+        	<result name="login">/login.jsp</result>
             <result name="query">/index.jsp</result>
         </action>
 

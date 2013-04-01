@@ -8,5 +8,5 @@ import com.po.User;
 
 public interface UserDao extends BaseDao{
     public List<User> findAll();
-    
+    public List<User> findUserByNameAndPass(String name,String pass);
 }
