@@ -2,11 +2,14 @@ package com.tbn.login.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.tbn.login.dao.UserDao;
 
-
+@Service("loginService")
 public class LoginService {
-	
+	@Autowired
 	private UserDao userDao;
    
 	public List getUserAll(){

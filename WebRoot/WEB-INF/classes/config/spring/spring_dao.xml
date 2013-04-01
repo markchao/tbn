@@ -10,8 +10,8 @@
 	<bean id="loginAction" class="com.tbn.login.web.action.LoginAction">
 	   <property name="loginService" ref="loginService"></property>
 	</bean>
-	
-    <bean id="UserDao" class="com.tbn.login.dao.UserDaoImpl" parent="daoParent"></bean>-->
+	-->
+    <bean id="userDao" class="com.tbn.login.dao.UserDaoImpl" parent="daoParent"></bean>
     <!-- <bean id="loginService" class="com.tbn.login.service.LoginService">
        <property name="userDao" ref="UserDao"></property>
     </bean>
